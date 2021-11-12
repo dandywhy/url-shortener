@@ -1,2 +1,26 @@
-<h1>URL Shortener</h1>
-<img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/16716/ExportedContentImage_00.png" alt="Not Found">
+
+{{#if shortURL}}
+
+<div class="short-url mt-5 mb-3">
+  <h3>Success!Please use this link:</h3>
+  <a href={{shortURL}} id="inputURL" class="link-secondary">{{shortURL}}</a>
+</div>
+<button onclick="copyShortURL()">Copy</button>
+<button>Back</button>
+
+{{else}}
+
+<form action="/" method="POST">
+  <div class="container mt-5 mb-3">
+    <input type="url" name="url" placeholder="Input URL here" minlength="12" style="width: 400px;" required>
+  </div>
+  <button type="submit">Shorten</button>
+</form>
+
+{{/if}}
+
+
+<script src="/javascripts/copy-url.js"></script>
+
+
+
