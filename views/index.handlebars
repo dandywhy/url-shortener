@@ -5,7 +5,7 @@
   <h3>Success!Please use this link:</h3>
   <a href={{shortURL}} id="inputURL" class="link-secondary">{{shortURL}}</a>
 </div>
-  <button class="btn btn-light tooltiptext" onclick="copyShortURL()"><i class="far fa-copy"></i>
+  <button class="btn btn-light" onclick="copyShortURL()"><i class="far fa-copy"></i>
   </button>
   <button class="btn btn-light" onclick="history.back()"><i class="fas fa-long-arrow-alt-left"></i></button>
 
@@ -17,7 +17,7 @@
   <div class="container mt-5 mb-3">
     <input type="url" name="url" placeholder="Input URL here" minlength="12" style="width: 400px;" required>
   </div>
-  <button type="submit">Shorten</button>
+  <button class="btn btn-light" type="submit">Shorten</button>
 </form>
 
 {{/if}}
