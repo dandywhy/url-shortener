@@ -5,8 +5,11 @@
   <h3>Success!Please use this link:</h3>
   <a href={{shortURL}} id="inputURL" class="link-secondary">{{shortURL}}</a>
 </div>
-<button onclick="copyShortURL()">Copy</button>
-<button>Back</button>
+  <button class="btn btn-light tooltiptext" onclick="copyShortURL()"><i class="far fa-copy"></i>
+  </button>
+  <button class="btn btn-light" onclick="history.back()"><i class="fas fa-long-arrow-alt-left"></i></button>
+
+
 
 {{else}}
 
