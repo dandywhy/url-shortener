@@ -7,7 +7,7 @@
 -
 將原本網址轉成隨機亂碼的短網址
 
-
+範例：https://sleepy-shore-85659.herokuapp.com/
 
 環境建置
 -
